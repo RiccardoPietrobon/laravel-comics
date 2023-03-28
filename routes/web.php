@@ -14,5 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('homepage');
+})->name('homepage');
+
+Route::get('/comics', function () {
+    $comics = config('comicdb'); //accedo al file in cui è inserito l'array
+    return view('comics', compact('comics'));
+})->name('comics');
+
+Route::get('/description', function () {
+    return view('description');
+})->name('description');

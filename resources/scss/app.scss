@@ -1,9 +1,21 @@
 @import "~bootstrap/scss/bootstrap";
 
-.jumbotron {
-    min-height: 100vh;
+li {
+    list-style: none;
 }
 
-img {
-    max-height: 150px;
+header {
+    .blue-section {
+        background-color: hsl(208.91deg 98.41% 49.22%);
+        color: white;
+
+        li:hover {
+            color: hsl(208.91deg 98.41% 49.22%);
+        }
+    }
+}
+
+.list-comics {
+    background-color: hsl(0deg 0% 10.98%);
+    color: white;
 }
