@@ -19,3 +19,26 @@ header {
     background-color: hsl(0deg 0% 10.98%);
     color: white;
 }
+
+.blue-nav {
+    background-color: hsl(208.91deg 98.41% 49.22%);
+    color: white;
+
+    img {
+        height: 40px;
+    }
+}
+
+.footer-up {
+    background-color: hsl(0deg 0% 10.98%);
+    color: gray;
+
+    h3 {
+        color: white;
+    }
+
+}
+
+.active {
+    background-color: black;
+}

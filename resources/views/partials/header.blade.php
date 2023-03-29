@@ -12,11 +12,11 @@
             <nav class="container d-flex justify-content-center align-items-center">
                 <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
                 <ul class="container d-flex justify-content-center">
-                    <li class="px-2">
+                    <li class="px-2 {{ request()->routeIs('homepage') ? 'active' : '' }}">
                         <a href="{{ route('homepage') }}">HOME</a></li>
-                    <li class="px-2">
+                    <li class="px-2 {{ request()->routeIs('comics') ? 'active' : '' }}">
                         <a href="{{ route('comics') }}">COMIC</a></li>
-                    <li class="px-2">
+                    <li class="px-2 {{ request()->routeIs('description') ? 'active' : '' }}">
                         <a href="{{ route('description') }}">DESCRIPTION</a></li>
                     <li class="px-2">TV</li>
                     <li class="px-2">COLLECTIBLES</li>
